@@ -2,6 +2,10 @@
 - name: Install htop
   hosts: all
   become: yes
+  roles: 
+    - role: hello_role
+      vars:
+        role_message: "Hello!"
   tasks:
     - name: Update apt cache
       apt:

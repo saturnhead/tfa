@@ -1,0 +1,3 @@
+- name: Ensure the message is printed
+  debug:
+    msg: "{{ role_message }}"
